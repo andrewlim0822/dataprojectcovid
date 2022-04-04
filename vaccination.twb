@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (canada vaccination)' inline='true' name='federated.1txp1fr0gxwpr610mr7bp1ll189z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='canada vaccination' name='excel-direct.0mjwgn51r9muwb1fz1asw1pgtc7p'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/leoxia/Downloads/canada vaccination.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0mjwgn51r9muwb1fz1asw1pgtc7p' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P387:no:A1:P387:0' header='yes' outcome='6'>
+            <column datatype='string' name='location' ordinal='0' />
+            <column datatype='string' name='iso_code' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='integer' name='total_vaccinations' ordinal='3' />
+            <column datatype='integer' name='people_vaccinated' ordinal='4' />
+            <column datatype='integer' name='people_fully_vaccinated' ordinal='5' />
+            <column datatype='integer' name='total_boosters' ordinal='6' />
+            <column datatype='integer' name='daily_vaccinations_raw' ordinal='7' />
+            <column datatype='integer' name='daily_vaccinations' ordinal='8' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='9' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='10' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='11' />
+            <column datatype='real' name='total_boosters_per_hundred' ordinal='12' />
+            <column datatype='integer' name='daily_vaccinations_per_million' ordinal='13' />
+            <column datatype='integer' name='daily_people_vaccinated' ordinal='14' />
+            <column datatype='real' name='daily_people_vaccinated_per_hundred' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0mjwgn51r9muwb1fz1asw1pgtc7p' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P387:no:A1:P387:0' header='yes' outcome='6'>
+            <column datatype='string' name='location' ordinal='0' />
+            <column datatype='string' name='iso_code' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='integer' name='total_vaccinations' ordinal='3' />
+            <column datatype='integer' name='people_vaccinated' ordinal='4' />
+            <column datatype='integer' name='people_fully_vaccinated' ordinal='5' />
+            <column datatype='integer' name='total_boosters' ordinal='6' />
+            <column datatype='integer' name='daily_vaccinations_raw' ordinal='7' />
+            <column datatype='integer' name='daily_vaccinations' ordinal='8' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='9' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='10' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='11' />
+            <column datatype='real' name='total_boosters_per_hundred' ordinal='12' />
+            <column datatype='integer' name='daily_vaccinations_per_million' ordinal='13' />
+            <column datatype='integer' name='daily_people_vaccinated' ordinal='14' />
+            <column datatype='real' name='daily_people_vaccinated_per_hundred' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P387:no:A1:P387:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_vaccinations]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_vaccinations</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[people_vaccinated]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>people_vaccinated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[people_fully_vaccinated]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>people_fully_vaccinated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_boosters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_boosters]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_boosters</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_raw</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[daily_vaccinations_raw]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>daily_vaccinations_raw</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[daily_vaccinations]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>daily_vaccinations</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations_per_hundred]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_vaccinations_per_hundred</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated_per_hundred]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>people_vaccinated_per_hundred</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated_per_hundred]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>people_fully_vaccinated_per_hundred</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_boosters_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_boosters_per_hundred]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_boosters_per_hundred</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_per_million</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[daily_vaccinations_per_million]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>daily_vaccinations_per_million</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_people_vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[daily_people_vaccinated]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>daily_people_vaccinated</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_people_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_people_vaccinated_per_hundred]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>daily_people_vaccinated_per_hundred</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB]' role='measure' type='quantitative' />
+      <column caption='Daily People Vaccinated' datatype='integer' name='[daily_people_vaccinated]' role='measure' type='quantitative' />
+      <column caption='Daily People Vaccinated Per Hundred' datatype='real' name='[daily_people_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations' datatype='integer' name='[daily_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Per Million' datatype='integer' name='[daily_vaccinations_per_million]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Raw' datatype='integer' name='[daily_vaccinations_raw]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='People Fully Vaccinated' datatype='integer' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Fully Vaccinated Per Hundred' datatype='real' name='[people_fully_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated' datatype='integer' name='[people_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated Per Hundred' datatype='real' name='[people_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Total Boosters' datatype='integer' name='[total_boosters]' role='measure' type='quantitative' />
+      <column caption='Total Boosters Per Hundred' datatype='real' name='[total_boosters_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Total Vaccinations' datatype='integer' name='[total_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Total Vaccinations Per Hundred' datatype='real' name='[total_vaccinations_per_hundred]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_BCADAF60ECEA4BBCBDC60D61D7ABD0CB'>
+            <properties context=''>
+              <relation connection='excel-direct.0mjwgn51r9muwb1fz1asw1pgtc7p' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:P387:no:A1:P387:0' header='yes' outcome='6'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='string' name='iso_code' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='integer' name='total_vaccinations' ordinal='3' />
+                  <column datatype='integer' name='people_vaccinated' ordinal='4' />
+                  <column datatype='integer' name='people_fully_vaccinated' ordinal='5' />
+                  <column datatype='integer' name='total_boosters' ordinal='6' />
+                  <column datatype='integer' name='daily_vaccinations_raw' ordinal='7' />
+                  <column datatype='integer' name='daily_vaccinations' ordinal='8' />
+                  <column datatype='real' name='total_vaccinations_per_hundred' ordinal='9' />
+                  <column datatype='real' name='people_vaccinated_per_hundred' ordinal='10' />
+                  <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='11' />
+                  <column datatype='real' name='total_boosters_per_hundred' ordinal='12' />
+                  <column datatype='integer' name='daily_vaccinations_per_million' ordinal='13' />
+                  <column datatype='integer' name='daily_people_vaccinated' ordinal='14' />
+                  <column datatype='real' name='daily_people_vaccinated_per_hundred' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Canada COVID-19 vaccination growth</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (canada vaccination)' name='federated.1txp1fr0gxwpr610mr7bp1ll189z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1txp1fr0gxwpr610mr7bp1ll189z'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='People Fully Vaccinated' datatype='integer' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+            <column-instance column='[people_fully_vaccinated]' derivation='Sum' name='[sum:people_fully_vaccinated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1txp1fr0gxwpr610mr7bp1ll189z].[tdy:date:qk]' scope='cols' value='Date' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.1txp1fr0gxwpr610mr7bp1ll189z].[sum:people_fully_vaccinated:qk]</rows>
+        <cols>[federated.1txp1fr0gxwpr610mr7bp1ll189z].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{D9C4D4DB-3F21-4DB2-8560-781A4D09A2CF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1txp1fr0gxwpr610mr7bp1ll189z].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CE7D075-5473-47D9-80AE-351361381CA7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
